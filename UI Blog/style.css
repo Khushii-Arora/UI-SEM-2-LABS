@@ -459,4 +459,12 @@ height: 110px !important;
 }
 
 
+.question{
+  font-weight: bold;
+  margin-top: 20px;
+}
 
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
