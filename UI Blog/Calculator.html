@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Khushi Arora || Portfolio </title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylsheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Case Study</title>
+</head>
+<body>
+
+    <section id="nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href=#nav-bar>
+                    <img src="./graphics/KAlogo.jpg" width="45" height="45" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Blog.html">Blogs</a>
+                  </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="./CaseStudy.html">Case Study</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Calculator.html">Calculator</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </nav>
+          </div>
+      </section>
+                    <!------------------------------------------------ nav bar ends here ------------------------------------------------------------>
+        
+                    <section id="banner" style="padding: 10px;">
+
+                        <div class="container" style="padding: 10px;">
+
+                            <div class= "formstyle">
+                                <form name = "form1">
+                                    
+                                    
+                                  <input id = "calc" type ="text" name = "answer"> 
+                                  <input type = "button" value = "CA" onclick = "form1.answer.value = ' ' " id= "clear" >
+                                  <br> <br>
+                                 
+                                  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">
+                                  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">
+                                  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+                                   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+                                  <br> <br>
+                                  
+                                  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">
+                                  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">
+                                  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+                                  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+                                  <br> <br>
+                                  
+                                  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">
+                                  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">
+                                  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+                                  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">
+                                  <br> <br>
+                                  
+                                  
+                                  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">
+                                  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+                                    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">
+                                    <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+                                  <br> 
+                                
+                                  
+                                  <br> 
+                                  
+                                </form>
+                                </div>
+
+
+                        </div>
+        
+        
+                  </section>
+
+                  <section id="footer">
+        
+                    <div class="container" style="background-image: linear-gradient(to left, #403b4a, #8c90b1);">
+                        <div class="row">
+            
+                          
+                            <div class="col-md-6">
+                              <p class="contact-title">Contact Me<hr color=" #dcdce5"></p>
+            
+                              <form  name="myForm" onsubmit= "return validateForm()">
+                                <div class="form-group">
+                                  <label for="exampleInputName">Name</label>
+                                  <input type="name" name="fname" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Name">
+                                  
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" name="femail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputMessage">Drop Message</label>
+                                  <input type="name" name="fmessage" class="form-control" id="exampleInputMessage" aria-describedby="textHelp" placeholder="Open For Buisness">
+                                </div>
+                                
+                                <div class="form-group">
+                                  <p style="font-weight: 20%;">Select Message Purpose</p>
+                                <class="form-group"><input type="checkbox" id="vehicle1" name="vehicle1" value="Web Development">
+                                <label for="vehicle1"> Web Development &nbsp;</label>
+                                
+                                
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Graphic design">
+                                <label for="vehicle2"> Graphic design &nbsp; </label>
+                                
+                                
+                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Other">
+                                <label for="vehicle3"> Others </label></div>
+                                <div class="form-group"><input type="file" name="filetoupload"><br></div>
+                              
+                                <button type="submit" class="btn btn-primary" style="margin: 10%;">Submit</button>
+                              </form>
+            
+            
+            
+            
+                            </div>
+            
+            
+            
+                            <div class="col-md-6">
+                              <p class="contact-title">Social Media<hr color=" #dcdce5"></p>
+            
+                              <div id="wrap">
+                                <a href="https://twitter.com/_KhushiArora" class="button twitter" >
+                                  <i class="fa fa-twitter"></i> Twitter
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/khushi-arora-2b13231b3/" class="button linkedin">
+                                  <i class="fa fa-linkedin"></i> LinkedIn
+                                </a>
+                                
+                                <a href="https://www.facebook.com/khushi.arora.12382/" class="button facebook">
+                                  <i class="fa fa-facebook"></i> Facebook
+                                </a>
+                                
+                                <a href="https://github.com/Khushii-Arora" class="button github">
+                                  <i class="fa fa-github"></i> Github
+                                </a>
+                                
+                                <a class="button pinterest">
+                                  <i class="fa fa-pinterest"></i> Pinterest
+                                </a>
+                                
+                                <a href="https://www.wattpad.com/user/Khushi_Arora" class="button google-plus">
+                                  <i class="fa fa-google-plus"></i> Wattpad
+                                </a>
+                              </div>
+            
+            
+            
+            
+            
+            
+            
+                            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+                        </div>
+            
+            
+            
+                    </div>
+            
+                   </section>
+    
+</body>
+</html>
