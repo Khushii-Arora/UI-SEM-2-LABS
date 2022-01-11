@@ -29,15 +29,539 @@
 
           AOS.init();
         </script>
+
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{ 
+      background-image: url(./graphics/image1.jpg);
+  
+  }
+  /* -----------------------------------------nav bar Section------------------------------------------ */
+  #nav-bar
+  {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      
+      
+      
+  }
+  .navbar
+  {
+      background-image: linear-gradient(to left, #403b4a, #8c90b1);
+      padding: 5 !important;
+      text-shadow: 1px 1px 0px #dcdce5;
+      font-weight: 500;
+      box-shadow:  5px 4px 5px #332e3d;
+     
+      
+  }
+  
+  .nav-link:hover{
+    background-color: #dcdce5;
+    color: #222;
+    border-radius: 15%;
+  }
+  
+  /* -----------------------------------------Banner Section------------------------------------------ */
+  
+  #banner
+  {
+      padding: 10 !important;
+  
+  }
+  
+  
+  
+  .promo-title
+  {
+      text-shadow: 5px 4px 2px #332e3d;
+      font-family: Verdana  ;
+      color: #dcdce5;
+      font-size: 55px;
+      font-weight: 600;
+      margin-top: 80px;
+      margin-bottom: 5px;
+      animation: text 2s 1 ;
+  }
+  .designation
+  {
+      font-family: Verdana  ;
+      color: #dcdce5;
+      text-shadow: 2px 2px 2px #332e3d;
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 0px;
+      margin-bottom: 50px
+  }
+  
+  
+  .prof-pic
+  {
+      
+      padding-top: 0%;
+      padding-bottom: 0%;
+      
+      border-radius: 100%;
+      margin-top: 5%;
+      
+      
+      
+      
+      box-shadow: 3px 6px 5px  #403b4a;
+      -moz-border-radius:100px;
+  
+  }
+  
+  
+  
+  .prof-pic {
+    width: 30%;
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(-.3);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  /* -----------------------------------------crousel Section------------------------------------------ */
+  .d-block 
+  {   
+      width: auto;
+      height: auto;
+      margin-left: 0%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      margin-right: 5%;
+  
+  }
+  
+  #carouselExampleIndicators
+  {
+  
+    align-content: center;
+    width: auto;
+      
+    max-height: auto;
+   padding-right: 4rem;
+   padding-left: 4rem;
+   padding-bottom: 1rem;
+  
+  }
+  
+  .About-title
+  {
+  
+      text-shadow: 5px 4px 2px #332e3d;
+      font-family: AR BERKLEY  ;
+      color: #dcdce5;
+      font-size: 40px;
+      font-weight: 500;
+      margin-top: 80px;
+      margin-bottom: 3px;
+      margin-left: 35%;
+  }
+  .about
+  {
+      font-family: Verdana  ;
+      color: #dcdce5;
+      text-shadow: 2px 2px 2px #332e3d;
+      font-size: 22px;
+      font-weight: 500;
+      margin-top: 0px;
+      margin-left: 10px;
+  
+  }
+  .skills-title
+  {
+      text-shadow: 5px 4px 2px #332e3d;
+      font-family: AR BERKLEY ;
+      color: #dcdce5;
+      font-size: 40px;
+      font-weight: 500;
+      margin-top: 60px;
+      margin-bottom: 3px;
+      margin-left: 40%;
+  
+  }
+  ul#skills li 
+  {
+      list-style-type: circle;
+      font-family: Verdana  ;
+      color: #dcdce5;
+      text-shadow: 2px 2px 2px #332e3d;
+      font-size: 22px;
+      font-weight: 500;
+      padding: 10px;
+  }
+  
+  /* -----------------------------------------footer Section------------------------------------------ */
+  
+  #footer
+  {
+      padding: 10 !important;
+  }
+  
+  .form-group
+  {
+      font-family: Verdana  ;
+      color: #dcdce5;
+      padding: 10px !important;
+      font-size:15px;
+      font-weight: 500;
+      margin-left: 10px;
+      margin-bottom: 80px !important;
+  
+  }
+  .form-group
+  {
+      width: auto;
+      
+      height: 20px;
+      margin-left: 10%;
+      margin-top: 0;
+      margin-bottom: 10%;
+      margin-right: 10%;
+  
+  }
+  .contact-title
+  {
+      text-shadow: 3px 2px 2px #332e3d;
+      font-family: Verdana  ;
+      color: #dcdce5;
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  
+  }
+  
+  .button {
+      display: inline-flex;
+      justify-content: center;
+      padding: 25px;
+      color: white;
+      text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+      transition: all 250ms;
+      position: relative;
+      margin: 4% 2% 4% 2%;
+    }
+    .button.twitter {
+      background-color: #09f;
+    }
+    .button.twitter:hover, .button.twitter:hover {
+      background-color: #4db8ff;
+    }
+    
+    .button.facebook {
+      background-color: #469;
+    }
+    .button.facebook:hover, .button.facebook:hover {
+      background-color: #6c8dbe;
+    }
+    
+    .button.github {
+      background-color: #222;
+    }
+    .button.github:hover, .button.github:hover {
+      background-color: #484848;
+    }
+    
+    .button.google-plus {
+      background-color: #d43;
+    }
+    .button.google-plus:hover, .button.google-plus:hover {
+      background-color: #e88075;
+    }
+    
+    .button.linkedin {
+      background-color: #07d;
+    }
+    .button.linkedin:hover, .button.linkedin:hover {
+      background-color: #2b9dff;
+    }
+    
+    .button.pinterest {
+      background-color: #c22;
+    }
+    .button.pinterest:hover, .button.pinterest:hover {
+      background-color: #e35757;
+    }
+    
+    .button:focus, .button:hover {
+      cursor: pointer;
+    }
+    
+    /* styling */
+   
+    #wrap {
+      box-sizing: border-box;
+      display: block;
+      vertical-align: middle;
+      padding: 20% 10% 20% 10%;
+      
+      padding-bottom: 10%;
+      padding-left: 15%;
+    }
+  
+    .button {
+      width: 30%;
+      visibility: visible;
+      animation-name: stretch;
+      animation-duration: 1.5s; 
+      animation-timing-function: ease-out; 
+      animation-direction: alternate;
+      animation-iteration-count: 1;
+      animation-fill-mode: none;
+      animation-play-state: running;
+      
+    }
+    
+    @keyframes stretch {
+      0% {
+        transform: scale(-.3);
+      }
+      
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+  
+  /*--------------------------------Project Page styling starts--------------------------------------*/
+  
+  /* Fonts used in Blog Post Page
+  
+  font-family: 'Nova Cut', cursive;
+  font-family: 'Red Hat Text', sans-serif;
+  font-family: 'Red Rose', cursive;
+  font-family: 'Redressed', cursive;
+  */
+  
+  
+  #blogPost .container{
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  
+  
+  
+  .blog-text{
+    size:16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 25px;
+    padding-right: 75px;
+    color: #dcdce5;
+  }
+  
+  #blogPost .container .col-md-9 hr{
+  
+    border: 0.5px solid #dcdce5;
+  
+  }
+  
+  .blog-like {
+  
+    margin-top: -10px;
+    margin-left: 60px;
+    padding-bottom: 1%;
+    display: flex;
+    color: #e9e2a5;
+  
+  }
+  
+  .blog-like .col-md-6 p{
+  font-family: 'Red Rose', cursive;
+  }
+  
+  .blog-like .col-md-6 p::before {
+    content: "By - ";
+    color: #e9e2a5;
+  }
+  
+  .blog-like .fab{
+  
+    margin-right: 8px;
+  }
+  
+  .blog-like .col-md-3{
+  
+    display: flex;
+  
+  }
+  
+  .blog-like .col-md-3 .far.fa-heart::after{
+  content: " 10 ";
+  color: #e9e2a5;
+  
+  }
+  
+  
+  .row-md-4 hr{
+    
+    margin-bottom: 5px;
+    margin-top: 70px;
+  
+  }
+  
+  
+  
+  .row-md-4{
+  
+    text-align: center;
+    margin-top: -15px;
+  }
+  
+  .row-md-4 h4{
+    font-family: 'Red Hat Text', sans-serif;
+    size: 26px;
+  }
+  
+  .social-blogpost{
+    display: flex;
+    justify-content: space-between;
+    color: #dcdce5;
+  
+  }
+  
+  
+  .latestPosts-title, .connectAndFollow-title{
+  
+    margin-bottom: 37px;
+    color: #e9e2a5;
+    
+  }
+  
+  .latestPosts .row-md-4{
+  
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 10px !important;
+  }
+  
+  .latestPosts .row-md-4 .col-md-6 img{
+  height: 110px !important;
+  }
+  
+  
+  .latestPosts .row-md-4 .col-md-6 h6{
+    font-family: 'Red Rose', cursive;
+    size: 17px;
+    color: #dcdce5;
+  
+    font-weight: 400px;
+    text-align: left;
+    margin-left: -10px;
+    margin-right: -10px;
+  
+  }
+  
+  .latestPosts .row-md-4 .col-md-6 p{
+  
+    color: #e9e2a5;
+    font-family: 'Red Rose', cursive;
+    font-weight: 400px;
+    size: 12px !important;
+    line-height: 15px;
+    text-align: left;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  
+  .question{
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  /*----------------------------- Calculator styling ------------------------------*/
+
+  .formstyle{
+    background-color: black;
+    float:left;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+#clear{
+float: right;
+border-radius: 5px;
+	padding: 20px;
+	background-image: linear-gradient(225deg, rgb(255, 251, 0),red);
+}
+ #clear:hover,#calc:hover{
+    background-image: radial-gradient(rgb(255, 251, 0),red);
+ }
+
+input
+{
+
+background-image: linear-gradient(50deg, rgb(4, 123, 163), rgb(233, 18, 215));
+color: white;
+	border-radius: 5px;
+	padding: 30px;
+	margin: 5px;
+    text-shadow: 2px 1px 1px rgb(0, 0, 0);
+    text-align: center;
+}
+
+input:hover{
+    background-image: radial-gradient(rgb(4, 123, 163), rgb(233, 18, 215));
+ 
+}
+
+
+#calc{
+    width: 200px;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 5px;
+    background-image: linear-gradient(225deg, rgb(255, 251, 0),red);
+    font-size: 20px;
+}
+</style>
+
+
+
       </head>
 
       <body>
         <section id="nav-bar">
           <div class="container">
               <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href=#nav-bar>
-                      <img src="./graphics/KAlogo.jpg" width="45" height="45" class="d-inline-block align-top" alt="" loading="lazy">
-                  </a>
+
+                <a class="navbar-brand" href=#nav-bar href="https://ibb.co/mqWP51v"><img src="https://i.ibb.co/d2YH41b/KAlogo.jpg" alt="KAlogo" width="45" height="45" class="d-inline-block align-top" loading="lazy"></a>
+                 
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -86,8 +610,7 @@
                                 
                                 <div class="col-md-6 text-center">
                                     
-                                    <img src="./graphics/woman-avatar-profile-vector-21372074.jpg" class="prof-pic img-fluid" >    
-                                                      
+                                  <a href="https://ibb.co/1sSc1xq"><img src="https://i.ibb.co/ZHZ95C8/Woman-avatar-profile-on-round-icon-vector-illustration-graphic-design.jpg" class="prof-pic img-fluid" alt="Woman-avatar-profile-on-round-icon-vector-illustration-graphic-design" ></a>                                                      
                                   </div>
                                 
                                     <div class="col-md-6">
@@ -130,35 +653,25 @@
                            
                             <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="./graphics/s1.jpg" class="d-block img-fluid" alt="book cover">
-                              </div>
+                              <a href="https://ibb.co/93h0sjB"><img src="https://i.ibb.co/x8YbJQw/s1.jpg" class="d-block img-fluid" alt="s1"></a>                              </div>
                               <div class="carousel-item">
-                                <img src="./graphics/s2.jpg" class="d-block img-fluid" alt="cover">
-                              </div>
+                                <a href="https://ibb.co/wYKRxFy"><img src="https://i.ibb.co/cxN17SJ/s2.jpg" class="d-block img-fluid" alt="s2"></a>                              </div>
                               <div class="carousel-item">
-                                <img src="./graphics/s3.jpg" class="d-block img-fluid" alt="book cover">
-                              </div>
+                                <a href="https://ibb.co/2KLPfWS"><img src="https://i.ibb.co/XJdpvjD/s3.jpg" class="d-block img-fluid" alt="s3"></a>                              </div>
                               <div class="carousel-item">
-                                <img src="./graphics/s4.jpg" class="d-block img-fluid" alt="book cover">
-                              </div>
+                                <a href="https://ibb.co/nm7Vsvf"><img src="https://i.ibb.co/Kh2Qjk7/s4.jpg" class="d-block img-fluid" alt="s4"></a>                              </div>
                               <div class="carousel-item">
-                                <img src="./graphics/s5.jpeg" class="d-block img-fluid" alt="logo">
-                              </div>
+                                <a href="https://ibb.co/Sm7hDF2"><img src="https://i.ibb.co/KszMcTY/s5.jpg" class="d-block img-fluid" alt="s5"></a>                              </div>
                               <div class="carousel-item item">
-                                <img src="./graphics/s6.jpg" class="d-block img-fluid" alt="book cover">
-                              </div>
+                                <a href="https://ibb.co/W2rYdm5"><img src="https://i.ibb.co/sVTMD8R/s6.jpg" class="d-block img-fluid" alt="s6"></a>                              </div>
                               <div class="carousel-item">
-                                <img src="./graphics/s7.jpg" class="d-block img-fluid" alt="book cover">
-                              </div>
+                                <a href="https://ibb.co/d0068gY"><img src="https://i.ibb.co/vxxm0Yn/s7.jpg" class="d-block img-fluid" alt="s7"></a>                              </div>
                               <div class="carousel-item">
-                                <img src="./graphics/s8.jpg" class="d-block img-fluid" alt="blog contents">
-                              </div>
+                                <a href="https://ibb.co/ZzXcd2h"><img src="https://i.ibb.co/ch32JYN/s8.jpg" class="d-block img-fluid" alt="s8"></a>                              </div>
                               <div class="carousel-item">
-                                <img src="./graphics/s9.jpg" class="d-block img-fluid " alt="book cover">
-                              </div>
+                                <a href="https://ibb.co/7CLKMhw"><img src="https://i.ibb.co/02vr45g/s9.jpg" class="d-block img-fluid" alt="s9"></a>                              </div>
                               <div class="carousel-item">
-                                <img src="./graphics/s10.jpg" class="d-block img-fluid" alt="book cover">
-                              </div>
+                                <a href="https://ibb.co/vw54bkQ"><img src="https://i.ibb.co/yfTFDqY/s10.jpg" class="d-block img-fluid" alt="s10"></a>                              </div>
                             
                               </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -243,35 +756,34 @@
                           <form  name="myForm" onsubmit= "return validateForm()" action="fileupload" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                               <label for="exampleInputName">Name</label>
-                              <input type="name" name="fname" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Name">
+                              <input type="name" name="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Name">
                               
                             </div>
                             <div class="form-group">
                               <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" name="femail" class="form-control" id="emailSentTo" aria-describedby="emailHelp" placeholder="Enter Email">
+                              <input type="email" name="email" class="form-control" id="emailSentTo" aria-describedby="emailHelp" placeholder="Enter Email">
                             </div>
                             <div class="form-group">
                               <label for="exampleInputMessage">Drop Message</label>
-                              <input type="name" name="fmessage" class="form-control" id="exampleInputMessage" aria-describedby="textHelp" placeholder="Open For Buisness">
+                              <input type="name" name="message" class="form-control" id="exampleInputMessage" aria-describedby="textHelp" placeholder="Open For Buisness">
                             </div>
                             
                             <div class="form-group">
                               <p style="font-weight: 20%;">Select Message Purpose</p>
-                            <class="form-group"><input type="checkbox" id="vehicle1" name="vehicle1" value="Web Development">
+                            <class="form-group"><input type="checkbox" id="vehicle1" name="opt1" value="Web Development">
                             <label for="vehicle1"> Web Development &nbsp;</label>
                             
                             
-                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Graphic design">
+                            <input type="checkbox" id="vehicle2" name="opt2" value="Graphic design">
                             <label for="vehicle2"> Graphic design &nbsp; </label>
                             
                             
-                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Other">
+                            <input type="checkbox" id="vehicle3" name="opt3" value="Other">
                             <label for="vehicle3"> Others </label></div>
 
                             <div class="form-group"><input type="file" name="filetoupload"><br></div>
                               
                             
-                          
                             <button type="submit" class="btn btn-primary" style="margin: 10%;">Submit</button>
                           </form>
         

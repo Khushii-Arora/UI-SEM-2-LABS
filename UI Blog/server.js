@@ -7,6 +7,7 @@ var app = require('http').createServer(createServer);var formidable = require('f
 const nodemailer = require('nodemailer');
 var fs = require('fs');
 var url = require('url');
+var mysql = require('mysql');
 
 
 
@@ -24,6 +25,13 @@ let mailDetails = {
   subject: 'Sending Email using Node.js',
   text: 'You have received a mail from Khushi Arora!!'
 };
+
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "$MANkhu9",
+    database: "mydb"
+  });
   
 
 function createServer(req, res) {
@@ -42,6 +50,18 @@ function createServer(req, res) {
                 if (err) throw err;
                 
                 res.write('File Uploaded');
+                console.log(fields);
+
+                con.connect(function(err) {
+                    if (err) throw err;
+                    console.log("Connected!");
+                    var sql = "insert into customers values ('"+fields.name+"','"+fields.email+"','"+fields.message+"','"+fields.opt1+"','"+fields.opt2+"','"+fields.opt3+"')";
+                    con.query(sql, function (err, result) {
+                      if (err) throw err;
+                      console.log("1 record inserted");
+                    });
+                  });
+
                 mailTransporter.sendMail(mailDetails, function(err, data) {
                     if(err) {
                         console.log('Error Occurs',err);
